@@ -1,5 +1,10 @@
 // Navigation code here
-
+@media @tablet {
+  width: 60%;
+}
+@media @phone {
+  width: 80%;
+  padding-bottom: 5px;
 
 .navigation {
     display: flex;
@@ -9,7 +14,7 @@
     background-color: lightgray;
     padding-top: 15px;
     border-bottom: 2px solid @sea-shell;
-  }
+     
   .navigation nav {
     display: flex;
     flex-direction: row;
@@ -18,30 +23,23 @@
     padding-top: 10px;
     padding-bottom: 10px;
       width:50%;
-    
-    @media @tablet {
-        width: 60%;
-    }
-    @media @phone {
-        width: 80%;
-        padding-bottom: 5px;
-    }
+        
     .navigation h1{
         font-size: 4rem;
     }
-    .navigation nav a {
     
+    .navigation nav a {
     justify-content: space-around;
     width: 100%;
     margin-left: 5px;
     text-decoration: none;
     color: @river-bend;
     font-size: 1.6rem;
+    }
+
     &:hover {
       color: rgb(73, 162, 192);
     }
     &:active{ 
       color: lighten(rgb(73, 162, 192), 30%);
     }
-  }
-  }
